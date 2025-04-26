@@ -31,7 +31,7 @@ student_result_system/
 sql
 Copy
 Edit
-CREATE DATABASE student_result_db;
+CREATE DATABASE studebt_result_db;
 
 2. Create the Tables
 students
