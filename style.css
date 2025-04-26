@@ -1,0 +1,102 @@
+/* General body styling */
+body {
+    background: linear-gradient(to right, #74ebd5, #9face6); /* Gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 80px 20px;
+    height: 100vh; /* Full height */
+    margin: 0;
+    color: #444; /* Text color */
+}
+
+/* Styling the container holding the content */
+div.container {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px; /* Limiting the width */
+    margin: auto; /* Center the container */
+    text-align: center;
+}
+
+/* Title styling */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Button container styling */
+button {
+    padding: 15px 35px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px;
+    width: 200px; /* Make buttons a bit larger */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect on button */
+button:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+/* Optional - Adding responsive design */
+@media (max-width: 768px) {
+    button {
+        width: 180px; /* Smaller width on mobile */
+    }
+
+    h1 {
+        font-size: 30px; /* Adjust font size on smaller screens */
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #11b8cb, #86c1d0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.button-container {
+    display: flex;
+    gap: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #2bffb8;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none; /* important for <a> to remove underline */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #ff416c;
+    transform: scale(1.05);
+}

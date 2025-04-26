@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Student Result Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Admin Dashboard</h1>
+
+    <!-- Admin forms: Add Student, Add Subject, Enter Marks -->
+    
+    <div class="form-container">
+        <h2>Add Student</h2>
+        <form action="admin.php" method="POST">
+            <input type="hidden" name="action" value="add_student">
+            Student ID: <input type="text" name="student_id" required><br><br>
+            Name: <input type="text" name="name" required><br><br>
+            Department: <input type="text" name="department" required><br><br>
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="form-container">
+        <h2>Add Subject</h2>
+        <form action="admin.php" method="POST">
+            <input type="hidden" name="action" value="add_subject">
+            Subject Code: <input type="text" name="subject_code" required><br><br>
+            Subject Name: <input type="text" name="subject_name" required><br><br>
+            <button type="submit">Add Subject</button>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="form-container">
+        <h2>Enter/Update Marks</h2>
+        <form action="admin.php" method="POST">
+            <input type="hidden" name="action" value="enter_marks">
+            Student ID: <input type="text" name="student_id" required><br><br>
+            Subject Code: <input type="text" name="subject_code" required><br><br>
+            Marks: <input type="number" name="marks" min="0" max="100" required><br><br>
+            <button type="submit">Submit Marks</button>
+        </form>
+    </div>   
+
+</body>
+</html>
