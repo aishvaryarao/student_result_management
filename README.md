@@ -79,10 +79,9 @@ Foreign keys are set to cascade on delete/update.
 Keep student_id and subject_code unique.
 
 🚀 Future Improvements
-Student login panel
-Admin authentication
-Generate mark sheets
-View results department-wise
+*Student login panel
+*Generate mark sheets
+*View results department-wise
 
 🧑‍💻 Author
 Aishvarya V
