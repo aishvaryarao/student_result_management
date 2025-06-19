@@ -28,33 +28,24 @@ student_result_system/
 
 🧩 Database Setup
 1. Create the Database
-sql
-Copy
-Edit
 CREATE DATABASE studebt_result_db;
 
+
 2. Create the Tables
-students
-sql
-Copy
-Edit
 CREATE TABLE students (
     student_id VARCHAR(20) PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     department VARCHAR(50) NOT NULL
 );
-subjects
-sql
-Copy
-Edit
+
+
 CREATE TABLE subjects (
     subject_code VARCHAR(20) PRIMARY KEY,
     subject_name VARCHAR(100) NOT NULL
 );
-marks
-sql
-Copy
-Edit
+
+
+
 CREATE TABLE marks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     student_id VARCHAR(20),
@@ -64,7 +55,6 @@ CREATE TABLE marks (
         ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (subject_code) REFERENCES subjects(subject_code)
         ON DELETE CASCADE ON UPDATE CASCADE
-
 );
 
 🖥️ How to Run the Project
@@ -85,4 +75,5 @@ Keep student_id and subject_code unique.
 
 🧑‍💻 Author
 Aishvarya V
+aishvaryavrao07@gmail.com
 Feel free to contribute or suggest improvements!
