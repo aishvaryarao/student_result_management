@@ -32,6 +32,7 @@ CREATE DATABASE studebt_result_db;
 
 
 2. Create the Tables
+   
 CREATE TABLE students (
     student_id VARCHAR(20) PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
